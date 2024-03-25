@@ -1,0 +1,65 @@
+1. Инсталирав
+2. Променив
+3. Креирав remote репозиториум
+4. $ mkdir SI_2024_lab1_223042 - направив папка
+    $ cd SI_2024_lab1_223042/ - влез во папка
+    $ git init - иницијализација на гит
+5. $ git remote add origin https://github.com/AngelaMihajlova/SI_2024_lab1_223042.git - поврзување на локално репо со remote репо
+6. $ nano README.md - креирање на file
+$ git add README.md - додавање на сцена
+$ git commit -m "Initial commit" - правење на commit
+7. $ cp Desktop/SILab1_1.java Desktop/SILab1_2.java Desktop/SILab1Main.java SI_2024_lab1_223042/  - копирање на files од Desktop во папката во локалното репо
+$ git add --all - ставење на files на сцена
+$ git commit -m "Add starter code" - правање commit 
+8. $ git push -u origin master - додадов фајлови во remote репо
+9. $ git branch bug1 - направив гранка со име bug1
+$ git branch bug2 - направив гранка со име bug2
+10. $ git checkout bug1 - се префрлив на гранката bug1
+11. $ nano SILab1_1.java - ја променувам грешката во фајлот
+$ git add SILab1_1.java - додавање на сцена
+$ git commit -m "Fix wrong condition in filterOddLengthStrings" - правење на commit
+12. $ git checkout bug2 - се префрлив на гранката bug2
+13. $ nano SILab1_2.java - ја поправам грешката
+$ git add SILab1_2.java - додавам на сцена
+$ git commit -m "Fix wrong condition in makeBigStringFrom" - правам commit
+14. $ git checkout bug1 - се префрлам на гранката bug1
+15. $ nano SILab1Main.java - влегов и ја направив измената
+$ git add SILab1Main.java - ја додадов на сцена
+$ git commit -m "Call method filterOddLengthStrings in main class" - направив commit
+16. $ git checkout bug2 - се вратив на гранката bug2
+17. $ nano SILab1Main.java - влегов и направив измена
+$ git add SILab1Main.java - го додадов на сцена
+$ git commit -m "Call method makeBigStringFrom in main class" - направив commit
+18. $ git push --all - синхронизација на сите гранки на оддалечениот репозиториум
+19. $ git checkout master - се префрлив на гранката master
+20. $ git merge bug1 - ја споив гранката bug1 на гранката master, нема конфликти и е Fast-Forward
+21. $ git push --all - синхронизација
+22. $ git checkout bug2 - се префрлама на гранката bug2
+23. Има конфликт
+$ git rebase master - направив rebase спрема master
+$ nano SILab1Main.java - кога го отворив ја увидов грешката, имаше <<<<<<  и  >>>>>>, го оставив само вториот внесен избор
+$ git add SILab1Main.java - го ставив на сцена
+$ git rebase --continue - направив rebase и го апдејтирав багот
+24. $ git checkout master - се префрлив на гранката master
+25. $ git merge bug2 - ја споив гранката bug2 кон master
+26. $ git push --all - го синхронизирав, но беше одбиено
+27. $ git push --force origin bug2 - присилно дадов push
+28. $ git log >> logs.txt - во logs.txt ги ископирав сите git логови
+$nano 223042.txt - внатре ќе ја воведам документацијата
+$ git add --all - додавање на сцена
+$ git commit -m "Final commit" - направив commit 
+29. $git push --all
+
+
+
+
+
+
+
+
+
+
+
+
+
+
